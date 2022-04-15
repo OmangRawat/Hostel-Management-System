@@ -1,0 +1,102 @@
+const User=require('../models/user');
+const Guard=require('../models/guard')
+const Employee=require('../models/employee')
+const Student=require('../models/student')
+const Warden=require('../models/warden')
+const Caretaker=require('../models/caretaker')
+const bcrypt=require('bcrypt');
+
+module.exports.dets=async (req,res)=>{
+    
+    try{
+
+        const {username,passwrd}= req.body;
+        console.log(req.body);
+        const user= await User.findOne({email:username});
+        var info;
+        console.log(user);
+        console.log(user.password);
+
+        const func = () =>{
+        bcrypt.compare(passwrd, user.password, async function(err, isMatch) {
+            if (err) {
+              throw err
+            } else if (!isMatch) {
+              console.log("Password doesn't match!")
+              sample = {};
+              sample['message'] = '404';
+              res.status(200).json(sample)
+            } else {
+              console.log("Password matches!")
+              sample = {}
+              if(user.role==1){
+                 var info = await Student.findOne({email:username});
+                 console.log(info)
+                  sample['id'] = info._id
+                  sample['role'] = user.role
+                  sample['message'] = '500'
+                  res.status(200).json(sample);
+              }
+              if(user.role==2){
+                  var info= await Guard.findOne({email:username});
+                  console.log(info);
+                  sample['id'] = info._id
+                  sample['role'] = user.role
+                  sample['message'] = '500'
+                  res.status(200).json(sample);
+              }
+              if(user.role==3){
+                  var info= await Employee.findOne({email:username});
+                  // res.status(200).json(info);
+                  sample['id'] = info._id
+                  sample['role'] = user.role
+                  sample['message'] = '500'
+                  res.status(200).json(sample);
+              }
+              if(user.role==4){
+                  console.log("inside")
+                  var info= await Warden.findOne({email:username});
+                  // res.status(200).json(info);
+                  sample['id'] = info._id
+                  sample['role'] = user.role
+                  sample['message'] = '500'
+                  res.status(200).json(sample);
+              }
+              if(user.role==5){
+                  console.log("caretaker")
+                  var info= await Caretaker.findOne({email:username});
+                  // res.status(200).json(info);
+                  sample['id'] = info._id
+                  sample['role'] = user.role
+                  sample['message'] = '500'
+                  res.status(200).json(sample);
+              }
+              
+            }
+          })
+        }
+        func()
+
+
+    }
+    catch(e){
+       // req.flash('error',e.message);
+        //res.redirect('register')
+        console.log(e);
+    }
+}
+
+
+module.exports.add=async (req,res)=>{
+    try{
+        const {phNo,email,password,role}= req.body;
+        let salt_round=1;
+        let hashed_password= bcrypt.hashSync(password,salt_round);
+        const newUser = new User({phNo: phNo,email:email,password:hashed_password,role:role });
+        await newUser.save();
+        console.log(newUser);
+        res.status(200).json(newUser);
+    }catch(e){
+        console.log(e);
+    }
+}

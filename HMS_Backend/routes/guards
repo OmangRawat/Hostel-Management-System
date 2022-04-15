@@ -1,0 +1,80 @@
+// const express=require('express');
+// const router=express.Router();
+// const campgrounds= require('../controllers/guards')
+// const catchAsync=require('../utils/catchAsync');
+
+
+
+
+
+// const guards=require('../models/guard');
+
+
+// router.route('/')
+//     .get(catchAsync(campgrounds.index))
+//     .post(isLoggedIn ,upload.array('img') , validateCampground, catchAsync(campgrounds.createCampground));
+       
+
+
+// router.get('/new',isLoggedIn, campgrounds.renderNewForm);
+
+
+// router.route('/:id')
+//         .get(catchAsync(campgrounds.showCampground))
+//         .put( isLoggedIn, isAuthor , upload.array('img') ,validateCampground ,catchAsync(campgrounds.updateCampground))
+//         .delete(isLoggedIn, isAuthor ,catchAsync(campgrounds.deleteCampground));
+
+ 
+// router.get('/:id/edit',isLoggedIn, isAuthor ,catchAsync(campgrounds.renderEditForm));
+
+
+// module.exports=router;
+
+
+const express= require('express');
+const router= express.Router();
+//const request= require('./controllers/roomCleaning')
+const {senderId,recieverId,cleaningRequest, otherRequest,getRequest,closeQuery,deliveryStatus,showDeliver,addDeliver, showSportEquip,acceptSportEquip,returnedSportEquip, changePass}= require('../controllers/roomCleaning');
+//const {deliveryStat}= require('../controllers/deliveryStat');
+
+router.route('/')
+        .post(getRequest); 
+
+router.route('/cleaningRequest')
+        .post(getRequest);
+
+router.route('/roomQueries')
+    .post(otherRequest);
+
+// router.route('/deliveryStatus')
+//     .post(deliveryStat);
+
+router.route('/closeRoomQueries')
+        .post(closeQuery);
+
+router.route('/deliveryStatus')
+        .post(deliveryStatus)
+
+
+router.route('/addDeliver')
+        .post(addDeliver)
+
+
+router.route('/showDeliver')
+        .post(showDeliver)
+
+
+router.route('/showSportEquip')
+        .post(showSportEquip)
+
+router.route('/acceptSportReq')
+        .post(acceptSportEquip)
+
+        
+router.route('/returnedSportEquip')
+        .post(returnedSportEquip)
+
+router.route('/changePassword')
+        .post(changePass)
+
+module.exports= router;
