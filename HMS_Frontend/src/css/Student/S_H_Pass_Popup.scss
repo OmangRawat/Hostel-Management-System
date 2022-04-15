@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.modal_password
+{
+
+    margin: auto;
+    overflow: auto;
+    background: white;
+}
+
+.modal-content-password 
+{
+    margin: auto;
+    width: fit-content;    
+    font-family: 'Fredoka', sans-serif;
+    .text{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    .labels{
+        margin-bottom: 2vh;
+    }
+    span.input1{
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .input_pass{
+        display: block;
+        margin-bottom: 2vh;
+        width: 15vw;
+        height: 5vh;
+        font-size: large;
+        font-family: 'Fredoka', sans-serif;
+
+    }
+
+    .input_pass,
+    .input_pass:valid{
+        border-color: #9b59b6;
+    }
+    .input_pass:focus{
+        outline-width: 0;
+    }
+
+    .submit{
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        width: 16vw;
+        height: 5vh;
+        
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        text-align: center;
+    }
+    .submit:hover{
+        background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        transform: scale(1.05);
+        // border: 2px black solid;
+        cursor: pointer;
+    }
+}

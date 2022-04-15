@@ -1,0 +1,123 @@
+.pagecontainer {
+  margin: auto;
+}
+
+.pagecontainer .maincontainer {
+  background-color: #d9e9e9;
+  margin: auto;
+  margin-top: 15vh;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 60vh;
+  width: 70vw;
+  -webkit-box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh blue;
+          box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagecontainer .maincontainer .leftcontainer {
+  width: 40%;
+  height: 100%;
+  padding: 5vh;
+  margin-right: 5vh;
+}
+
+.pagecontainer .maincontainer .rightcontainer {
+  margin-left: 5vh;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer {
+  padding-top: 10vh;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer {
+  margin: auto;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .infobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .infobox .infoname {
+  margin-right: 3vw;
+  font-weight: bold;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .infobox .infoname .labels {
+  display: block;
+  font-size: 2.5vh;
+  margin-bottom: 2vh;
+  padding: 0.5vh;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .infobox .inputs {
+  width: 12vw;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .infobox .inputs input {
+  height: 2.5vh;
+  width: 15vw;
+  border: none;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  margin-bottom: 2vh;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: medium;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .pagechange {
+  width: 100%;
+  padding: 0 0 1vh 0;
+  color: blue;
+  font-size: small;
+  margin: auto;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .pagechange .gotosignup {
+  float: left;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .pagechange .forgotpsw {
+  float: right;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .errormsg {
+  height: 2vh;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form #submit {
+  display: block;
+  margin: auto;
+  margin-top: 1vh;
+  padding: 2vh 4vw 2vh 4vw;
+  border-radius: 1rem;
+  border: 2px blue solid;
+  background-color: white;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form #submit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #6338ff;
+  color: white;
+  border: 2px white solid;
+}
+
+.pagecontainer .maincontainer .rightcontainer .signupcontainer .infocontainer form .line {
+  padding-top: 2vh;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=signup.css.map */

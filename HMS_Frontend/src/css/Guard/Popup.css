@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
+.popup_container {
+  width: 62vw;
+  height: 56vh;
+  padding: 2vh 2vh 2vh 2vh;
+}
+
+.popup_container .popup {
+  height: 55vh;
+  text-align: center;
+  display: block;
+}
+
+.popup_container .popup h1 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.popup_container .popup p {
+  border: 0.5vh double #000000;
+  padding: 3vh 2vh 3vh 2vh;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.5vh;
+  margin-right: 0.9vw;
+  margin-top: 5vh;
+  min-height: 20vh;
+  color: #1976d2;
+  text-align: left;
+}
+
+.popup_container .popup .st_query_status {
+  border-color: #1976d2;
+  color: #1976d2;
+  background: white;
+  border-radius: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1vh 8vh 1vh 8vh;
+  top: 22vh;
+}
+
+.popup_container .popup .st_query_status h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 600;
+}
+
+.popup_container .popup .st_query_status:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #1976d2;
+}
+/*# sourceMappingURL=Popup.css.map */

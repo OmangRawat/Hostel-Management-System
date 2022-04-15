@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+.Sidebar_container{
+    .subject{
+        margin: auto   ;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        text-align: center;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 4vh 4vh 4vh 4vh;;
+        // box-shadow: #35362a00 0px 0px 24px 0px, #0080ff24 0px 16px 32px -4px;
+        background: #0080ff21;
+    }
+    .buttons{
+        a{
+            text-decoration: none;
+            color: #1a7cdd;
+        }
+        .allbtn{
+            // border: 3px solid #1a7cdd;
+            border-radius: 6px;
+            padding: 4vh 4vh 4vh 4vh;
+            // margin-bottom: 4vh;
+            // box-shadow: #35362a00 0px 0px 24px 0px, #0080ff24 0px 16px 32px -4px;
+            box-shadow: #00000040 2px 2px 2px 2px;
+            // box-shadow: #d7d7d7 1px 1px 1px 1px;
+            // box-shadow: #d7d7d7 0px 1px 1px 0px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 20px;
+            // display: block;
+            .allicn{
+                width: 2vw;
+                height: 3vh;
+                margin: auto;
+                margin-right: 1vw;
+                border: 3px solid white;
+                border-radius: 6px;
+            }
+        }
+        .allbtn:hover{
+            cursor: pointer;
+            // background-color: #1a7cdd;
+            background-color: RGB(2 47 94 / 45%);
+            color: white;
+        }
+
+        // .btn1{
+        //     display: block;
+        //     .icn1{
+        //         width: 3vw;
+        //         height: 4vh;
+        //     }
+        // }
+    }
+}

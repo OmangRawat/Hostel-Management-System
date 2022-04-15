@@ -1,0 +1,17 @@
+.test {
+  background-color: blueviolet;
+  height: 100vh;
+}
+
+.test .testinner1 {
+  background-color: antiquewhite;
+  display: inline-block;
+  height: 100vh;
+  width: 80vw;
+}
+
+.test .testinner1 .testinner {
+  width: 100%;
+  height: 88vh;
+}
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,15 @@
+.test{
+    background-color: blueviolet;
+    height: 100vh;
+    .testinner1{
+        background-color: antiquewhite;
+        display: inline-block;
+        height: 100vh;
+        width: 80vw;
+        .testinner{
+            width: 100%;
+            height: 88vh;
+        }
+    }
+    
+}

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
+.containerA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5vh;
+  height: 60vh;
+}
+
+.containerA .leftcontainerA {
+  width: 40%;
+  margin: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerA .leftcontainerA .imgcontainer {
+  display: black;
+  padding: auto;
+  overflow: hidden;
+}
+
+.containerA .leftcontainerA .imgcontainer img {
+  width: 85%;
+  left: 2vw;
+}
+
+.containerA .leftcontainerA #name {
+  font-size: xx-large;
+  margin: auto;
+  margin-top: 3vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+.containerA .rightcontainerA {
+  margin: 3vh;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 5px #1a7cdd;
+          box-shadow: 10px 10px 5px #1a7cdd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  font-size: x-large;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.containerA .rightcontainerA .info_item_left {
+  margin: 5vh;
+  font-weight: bold;
+}
+
+.containerA .rightcontainerA .info_item_right {
+  color: blue;
+  font-weight: 100;
+}
+
+.request_menu {
+  position: fixed;
+  bottom: 10vh;
+  right: 5vw;
+}
+
+.request_menu .btn-pluss {
+  position: relative;
+  display: block;
+  border-radius: 22px;
+  width: 5vw;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-transition: width .3s .5s ease, border-radius 1.1s ease;
+  transition: width .3s .5s ease, border-radius 1.1s ease;
+}
+
+.request_menu .btn-pluss a {
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.request_menu .btn-pluss a:hover {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: white;
+  background-color: blue;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.request_menu .btn-pluss:after {
+  content: '+';
+  position: fixed;
+  display: block;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 100%;
+  line-height: 4vw;
+  text-align: center;
+  font-size: 4vw;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.request_menu .btn-pluss ul {
+  opacity: 0;
+}
+
+.request_menu .btn-pluss ul {
+  opacity: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -11vh;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.request_menu .btn-pluss ul li {
+  background-color: blue;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+.request_menu .btn-pluss-wrapper:hover .btn-pluss ul {
+  opacity: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 3vh;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.request_menu .btn-pluss-wrapper:hover .btn-pluss li {
+  height: 4vh;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+.request_menu .btn-pluss-wrapper:hover .btn-pluss li:hover {
+  border-bottom: 1px solid #d2c9c9;
+}
+/*# sourceMappingURL=S_Home.css.map */

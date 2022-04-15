@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+.all_row_btns{
+    margin: auto;
+    padding: 1vh 1.8vh 1.5vh 1.8vh;
+    border: 1px solid #1a7cdd;
+    border-radius: 5px;
+    background: #fff;
+    color: #1a7cdd;
+    font-family:  'Fredoka', sans-serif;
+    font-size: 14px;
+}
+.all_row_btns:hover{
+    // border: #1a7cdd;
+    cursor: pointer;
+    color: #fff;
+    background: #1a7cdd;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iFAAI;AAEZ,AAAA,aAAa,CAAA;EACT,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;EACX,WAAW,EAAG,qBAAqB;CACtC",
+    "sources": [
+        "CS_table.css.scss"
+    ],
+    "names": [],
+    "file": "CS_table.css.css"
+}

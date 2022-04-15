@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
+.s_popup_container {
+  width: 62vw;
+  height: 56vh;
+  border: 5px solid #1976d2;
+  padding: 2vh 2vh 2vh 2vh;
+}
+
+.s_popup_container .popup {
+  width: 62vw;
+  height: 55vh;
+  text-align: center;
+}
+
+.s_popup_container .popup h1 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.s_popup_container .popup p {
+  border: 6px solid #0080ff21;
+  padding: 3vh 2vh 3vh 2vh;
+  margin-right: 3.5vw;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.5vh;
+}
+
+.s_popup_container .popup .st_query_status {
+  border-color: #1976d2;
+  color: #1976d2;
+  background: white;
+  border-radius: 4px;
+  text-align: center;
+  margin: auto;
+  padding: 1vh 1vh 1vh 2vh;
+  margin-left: 42vw;
+  margin-top: 4vh;
+}
+
+.s_popup_container .popup .st_query_status h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 600;
+}
+
+.s_popup_container .popup .st_query_status:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #1976d2;
+}
+/*# sourceMappingURL=S_Popup.css.map */

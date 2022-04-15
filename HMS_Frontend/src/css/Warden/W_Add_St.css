@@ -1,0 +1,19 @@
+.w_add_st .w_add_st_btn {
+  border-color: #1976d2;
+  color: #1976d2;
+  font-family: 'Fredoka', sans-serif;
+  background: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1vh 1vh 1vh 1vh;
+  font-size: 2.5vh;
+}
+
+.w_add_st .w_add_st_btn:hover {
+  cursor: pointer;
+  border-color: #ffffff;
+  color: #ffffff;
+  background: #1976d2;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=W_Add_St.css.map */
