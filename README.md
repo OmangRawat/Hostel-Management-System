@@ -11,4 +11,4 @@
  npm install -> to install the dependencies
  npm start
 
-Now, with the successfull execution of both the servers , the project is ready to go in a smoth and functional way
+Now, with both the servers functional, the project is all set to be used.
